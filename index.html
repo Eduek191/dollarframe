@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUREX — Grow Your Wealth in Dollars</title>
+  <meta name="description" content="Secure, transparent dollar-denominated investments with institutional-grade returns. Start from $500." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        AUREX<span class="nav-logo-dot"></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="plans.html" class="btn btn-gold" style="display:none;" id="nav-cta">Get Started</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="plans.html" class="nav-link">Plans</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="plans.html" class="btn btn-gold">Get Started</a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-line hero-line-1"></div>
+    <div class="hero-line hero-line-2"></div>
+
+    <div class="container hero-content">
+      <div class="hero-eyebrow fade-up">
+        <span class="hero-eyebrow-dot"></span>
+        Institutional-Grade Returns · Open to Everyone
+      </div>
+
+      <h1 class="hero-title fade-up stagger-1">
+        Grow Your<br/>
+        Wealth<em> in Dollars</em>
+      </h1>
+
+      <p class="hero-sub fade-up stagger-2">
+        Secure, transparent dollar-denominated investments with institutional-grade returns. Start with as little as $500.
+      </p>
+
+      <div class="hero-ctas fade-up stagger-3">
+        <a href="plans.html" class="btn btn-gold btn-lg">
+          <i data-lucide="trending-up" style="width:18px;height:18px;"></i>
+          Start Investing
+        </a>
+        <a href="about.html" class="btn btn-ghost btn-lg">
+          Learn More
+          <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       STATS BAR
+       ============================================================ -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-value">
+            $<span data-counter="2.4" data-decimals="1" data-suffix="B+">2.4B+</span>
+          </div>
+          <div class="stat-label">Total Assets Managed</div>
+        </div>
+        <div class="stat-item fade-up stagger-2">
+          <div class="stat-value">
+            <span data-counter="18000" data-prefix="" data-suffix="+">18,000+</span>
+          </div>
+          <div class="stat-label">Active Investors Worldwide</div>
+        </div>
+        <div class="stat-item fade-up stagger-3">
+          <div class="stat-value">
+            <span data-counter="12.4" data-decimals="1" data-suffix="%">12.4%</span>
+          </div>
+          <div class="stat-label">Avg. Annual Return</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">How It Works</span>
+        </div>
+        <h2 class="section-title">Simple. Transparent. Rewarding.</h2>
+        <p class="section-sub">Get started in minutes and watch your dollars grow with our streamlined three-step process.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card step-card fade-up stagger-1">
+          <div class="step-number">01</div>
+          <div class="step-icon-wrap">
+            <i data-lucide="user-plus" style="width:22px;height:22px;"></i>
+          </div>
+          <h3 class="step-title">Create Account</h3>
+          <p class="step-desc">Register in under 3 minutes. Complete our streamlined KYC process with ID verification. Fully digital, no paperwork.</p>
+        </div>
+        <div class="card step-card fade-up stagger-2">
+          <div class="step-number">02</div>
+          <div class="step-icon-wrap">
+            <i data-lucide="dollar-sign" style="width:22px;height:22px;"></i>
+          </div>
+          <h3 class="step-title">Fund in Dollars</h3>
+          <p class="step-desc">Deposit USD via bank wire, SWIFT transfer, or USDT. Your funds are held in segregated, insured accounts.</p>
+        </div>
+        <div class="card step-card fade-up stagger-3">
+          <div class="step-number">03</div>
+          <div class="step-icon-wrap">
+            <i data-lucide="bar-chart-2" style="width:22px;height:22px;"></i>
+          </div>
+          <h3 class="step-title">Earn Returns</h3>
+          <p class="step-desc">Receive monthly interest credits directly to your account. Withdraw anytime or reinvest for compounding growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold" />
+
+  <!-- ============================================================
+       INVESTMENT PLANS PREVIEW
+       ============================================================ -->
+  <section class="section plans-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">Investment Plans</span>
+        </div>
+        <h2 class="section-title">Choose Your Growth Path</h2>
+        <p class="section-sub">From first-time investors to institutional portfolios — a plan calibrated to your goals.</p>
+      </div>
+
+      <div class="grid-3" style="margin-bottom:40px;">
+
+        <!-- Starter -->
+        <div class="card plan-card fade-up stagger-1">
+          <span class="plan-badge">Starter</span>
+          <h3 class="plan-name">Starter</h3>
+          <p class="plan-min">From $500 minimum</p>
+          <div class="plan-rate"><sup>%</sup>8.0</div>
+          <div class="plan-rate-label">annual return · monthly payouts</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              No lock-in period
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Basic dashboard
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Email support
+            </li>
+          </ul>
+          <a href="plans.html" class="btn btn-outline-gold" style="width:100%;justify-content:center;">View Details</a>
+        </div>
+
+        <!-- Growth — Featured -->
+        <div class="card plan-card card-featured fade-up stagger-2">
+          <span class="plan-badge">
+            <i data-lucide="star" style="width:10px;height:10px;"></i>
+            Most Popular
+          </span>
+          <h3 class="plan-name">Growth</h3>
+          <p class="plan-min">From $5,000 minimum</p>
+          <div class="plan-rate"><sup>%</sup>10.5</div>
+          <div class="plan-rate-label">annual return · monthly + quarterly bonus</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              90-day lock-in period
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Advanced analytics
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Priority support
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Reinvestment option
+            </li>
+          </ul>
+          <a href="plans.html" class="btn btn-gold" style="width:100%;justify-content:center;">
+            <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+            Get Started
+          </a>
+        </div>
+
+        <!-- Premium -->
+        <div class="card plan-card fade-up stagger-3">
+          <span class="plan-badge">Premium</span>
+          <h3 class="plan-name">Premium</h3>
+          <p class="plan-min">From $25,000 minimum</p>
+          <div class="plan-rate"><sup>%</sup>13.0</div>
+          <div class="plan-rate-label">annual return · monthly + bonus</div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              6-month lock-in
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Dedicated manager
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              VIP support
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Portfolio diversification
+            </li>
+          </ul>
+          <a href="plans.html" class="btn btn-outline-gold" style="width:100%;justify-content:center;">View Details</a>
+        </div>
+
+      </div>
+
+      <div class="flex-center fade-up">
+        <a href="plans.html" class="btn btn-ghost">
+          View All Plans — Including Institutional
+          <i data-lucide="chevron-right" style="width:16px;height:16px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold" />
+
+  <!-- ============================================================
+       TRUST / WHY INVESTORS TRUST US
+       ============================================================ -->
+  <section class="section trust-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">Trust & Security</span>
+        </div>
+        <h2 class="section-title">Why Investors Trust AUREX</h2>
+        <p class="section-sub">Built on four pillars that protect and grow your wealth with institutional discipline.</p>
+      </div>
+
+      <div class="grid-4">
+        <div class="feature-block fade-up stagger-1">
+          <div class="feature-icon">
+            <i data-lucide="shield-check" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-title">Regulated &amp; Compliant</h3>
+          <p class="feature-desc">Fully licensed and audited by independent regulatory bodies. Annual third-party compliance reviews ensure your capital is protected.</p>
+        </div>
+        <div class="feature-block fade-up stagger-2">
+          <div class="feature-icon">
+            <i data-lucide="dollar-sign" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-title">Dollar Stability</h3>
+          <p class="feature-desc">All investments are USD-denominated, shielding you from local currency volatility and providing globally recognized asset stability.</p>
+        </div>
+        <div class="feature-block fade-up stagger-3">
+          <div class="feature-icon">
+            <i data-lucide="droplets" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-title">Daily Liquidity</h3>
+          <p class="feature-desc">Withdrawal requests processed within 24–72 business hours. Your money is never locked without your explicit consent.</p>
+        </div>
+        <div class="feature-block fade-up stagger-4">
+          <div class="feature-icon">
+            <i data-lucide="lock" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-title">Insured Deposits</h3>
+          <p class="feature-desc">Client deposits held in segregated custodian accounts with institutional insurance coverage up to $2M per investor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold" />
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">Testimonials</span>
+        </div>
+        <h2 class="section-title">What Our Investors Say</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="card testimonial-card fade-up stagger-1">
+          <div class="testimonial-stars">
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+          </div>
+          <p class="testimonial-quote">"AUREX has completely changed how I think about saving. The 10.5% on my Growth plan hits my account every month like clockwork. I've since moved my entire emergency fund here."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div>
+              <div class="testimonial-name">Marcus R.</div>
+              <div class="testimonial-loc">Lagos, Nigeria</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testimonial-card fade-up stagger-2">
+          <div class="testimonial-stars">
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+          </div>
+          <p class="testimonial-quote">"I was skeptical at first, but after 18 months with AUREX I've earned more in dollar returns than my entire local bank account generated in five years. The transparency is remarkable."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SA</div>
+            <div>
+              <div class="testimonial-name">Sophia A.</div>
+              <div class="testimonial-loc">Nairobi, Kenya</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card testimonial-card fade-up stagger-3">
+          <div class="testimonial-stars">
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+            <i data-lucide="star" style="fill:var(--color-gold);"></i>
+          </div>
+          <p class="testimonial-quote">"As a family office managing multi-generational wealth, we needed stability and yield. AUREX's Premium tier delivers both. The dedicated manager relationship alone is worth the minimum."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JC</div>
+            <div>
+              <div class="testimonial-name">James C.</div>
+              <div class="testimonial-loc">Dubai, UAE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+  <section class="cta-banner fade-in">
+    <div class="container" style="position:relative;">
+      <div class="section-label" style="justify-content:center; margin-bottom:20px;">
+        <span class="label-caps">Begin Today</span>
+      </div>
+      <h2 class="cta-banner-title">Ready to Grow Your Wealth?</h2>
+      <p class="cta-banner-sub">Join 18,000+ investors already growing their dollars with AUREX.</p>
+      <div class="flex-center" style="gap:16px; flex-wrap:wrap;">
+        <a href="plans.html" class="btn btn-gold btn-lg">
+          <i data-lucide="trending-up" style="width:18px;height:18px;"></i>
+          Open Your Account
+        </a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Talk to an Advisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="display:inline-flex;">
+            AUREX<span class="nav-logo-dot"></span>
+          </a>
+          <p>Democratizing access to institutional-grade dollar investments for global investors. Secure, transparent, and built for long-term wealth creation.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Platform</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="plans.html" class="footer-link">Investment Plans</a>
+            <a href="dashboard.html" class="footer-link">Investor Dashboard</a>
+            <a href="about.html" class="footer-link">About AUREX</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Story</a>
+            <a href="about.html#team" class="footer-link">Leadership Team</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Press &amp; Media</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Risk Disclosure</a>
+            <a href="#" class="footer-link">AML Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          <strong style="color:var(--color-text-muted);">Important Disclaimer:</strong> Investment returns are not guaranteed. Past performance does not indicate future results. All investments carry risk, including possible loss of principal. Please read all terms, risk disclosures, and plan documents before investing. AUREX is not a bank. Deposits are not government-insured unless stated otherwise.
+        </p>
+        <p class="footer-copy">© 2024 AUREX Financial. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Show nav CTA after load
+    document.getElementById('nav-cta').style.display = 'inline-flex';
+  </script>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment Plans — AUREX</title>
+  <meta name="description" content="Compare AUREX investment plans from Starter to Institutional. 8% to 15.5% annual returns. Use our ROI calculator to project your earnings." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        AUREX<span class="nav-logo-dot"></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="plans.html" class="nav-link active">Plans</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="plans.html" class="btn btn-gold">Get Started</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="plans.html" class="nav-link active">Plans</a>
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="plans.html" class="btn btn-gold">Get Started</a>
+  </div>
+
+  <!-- ============================================================
+       PAGE HEADER
+       ============================================================ -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Investment Plans</span>
+      </div>
+      <div class="section-label">
+        <span class="label-caps">Choose Your Plan</span>
+      </div>
+      <h1 class="display-lg" style="max-width:600px; margin-bottom:16px;">
+        Investment Plans<br/><em style="font-style:italic; color:var(--color-gold);">Built for Every Stage</em>
+      </h1>
+      <p style="font-size:16px; color:var(--color-text-muted); max-width:480px; line-height:1.7;">
+        From first-time savers to institutional allocators. Every plan is designed to deliver consistent, dollar-denominated returns.
+      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PLAN CARDS — FULL DETAIL
+       ============================================================ -->
+  <section class="section" style="background:var(--color-navy);">
+    <div class="container">
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:24px; align-items:start;">
+
+        <!-- Starter -->
+        <div class="card plan-card fade-up stagger-1">
+          <span class="plan-badge">Entry Level</span>
+          <h3 class="plan-name">Starter</h3>
+          <p class="plan-min">$500 — $4,999 minimum deposit</p>
+          <div class="plan-rate"><sup>%</sup>8.0</div>
+          <div class="plan-rate-label">annual return</div>
+          <div class="plan-divider"></div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Payout frequency</span>
+              <span>Monthly</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Lock-in period</span>
+              <span style="color:var(--color-success);">None</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Min. investment</span>
+              <span>$500</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0;">
+              <span style="color:var(--color-text-muted);">Max. investment</span>
+              <span>$4,999</span>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              No lock-in period
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Basic investor dashboard
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Email support (48hr response)
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Monthly statements
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Free plan upgrade anytime
+            </li>
+          </ul>
+          <button class="btn btn-outline-gold" style="width:100%;justify-content:center;" data-plan-select="starter">
+            Select Starter
+          </button>
+        </div>
+
+        <!-- Growth — Featured -->
+        <div class="card plan-card card-featured fade-up stagger-2" style="transform:none;">
+          <span class="plan-badge">
+            <i data-lucide="star" style="width:10px;height:10px;"></i>
+            Most Popular
+          </span>
+          <h3 class="plan-name">Growth</h3>
+          <p class="plan-min">$5,000 — $24,999 minimum deposit</p>
+          <div class="plan-rate"><sup>%</sup>10.5</div>
+          <div class="plan-rate-label">annual return</div>
+          <div class="plan-divider"></div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Payout frequency</span>
+              <span>Monthly + Quarterly bonus</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Lock-in period</span>
+              <span>90 days</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Min. investment</span>
+              <span>$5,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0;">
+              <span style="color:var(--color-text-muted);">Max. investment</span>
+              <span>$24,999</span>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              90-day lock-in period
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Advanced analytics dashboard
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Priority support (12hr response)
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Quarterly bonus returns
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Auto-reinvestment option
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Portfolio performance reports
+            </li>
+          </ul>
+          <button class="btn btn-gold" style="width:100%;justify-content:center;" data-plan-select="growth">
+            <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+            Select Growth
+          </button>
+        </div>
+
+        <!-- Premium -->
+        <div class="card plan-card fade-up stagger-3">
+          <span class="plan-badge">High Yield</span>
+          <h3 class="plan-name">Premium</h3>
+          <p class="plan-min">$25,000 — $99,999 minimum deposit</p>
+          <div class="plan-rate"><sup>%</sup>13.0</div>
+          <div class="plan-rate-label">annual return</div>
+          <div class="plan-divider"></div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Payout frequency</span>
+              <span>Monthly + Semi-annual bonus</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Lock-in period</span>
+              <span>6 months</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Min. investment</span>
+              <span>$25,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0;">
+              <span style="color:var(--color-text-muted);">Max. investment</span>
+              <span>$99,999</span>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              6-month lock-in period
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Dedicated relationship manager
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              VIP 24/7 support line
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Portfolio diversification tools
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Semi-annual performance bonus
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Quarterly strategy reviews
+            </li>
+          </ul>
+          <button class="btn btn-outline-gold" style="width:100%;justify-content:center;" data-plan-select="premium">
+            Select Premium
+          </button>
+        </div>
+
+        <!-- Institutional -->
+        <div class="card plan-card fade-up stagger-4" style="background:linear-gradient(135deg, #1a1b22, #161a22);">
+          <span class="plan-badge" style="background:rgba(201,168,76,0.15); border-color:rgba(201,168,76,0.4);">Institutional</span>
+          <h3 class="plan-name">Institutional</h3>
+          <p class="plan-min">$100,000+ minimum deposit</p>
+          <div class="plan-rate"><sup>%</sup>15.5</div>
+          <div class="plan-rate-label">annual return (negotiable)</div>
+          <div class="plan-divider"></div>
+
+          <div style="margin-bottom:20px;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Payout frequency</span>
+              <span>Custom schedule</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Lock-in period</span>
+              <span>Negotiable</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0; border-bottom:1px solid var(--color-border);">
+              <span style="color:var(--color-text-muted);">Min. investment</span>
+              <span>$100,000</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; padding:8px 0;">
+              <span style="color:var(--color-text-muted);">Max. investment</span>
+              <span style="color:var(--color-gold);">Unlimited</span>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Fully custom terms &amp; structure
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Direct investment access
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              White-glove onboarding service
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Tax optimization advisory
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Senior portfolio manager access
+            </li>
+            <li class="plan-feature">
+              <span class="plan-feature-check"><i data-lucide="check" style="width:10px;height:10px;"></i></span>
+              Bespoke reporting suite
+            </li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold" style="width:100%;justify-content:center;">
+            <i data-lucide="phone" style="width:16px;height:16px;"></i>
+            Contact Advisor
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold" />
+
+  <!-- ============================================================
+       ROI CALCULATOR
+       ============================================================ -->
+  <section class="section calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">ROI Calculator</span>
+        </div>
+        <h2 class="section-title">Project Your Returns</h2>
+        <p class="section-sub">Adjust the sliders to see exactly how your investment grows over time.</p>
+      </div>
+
+      <div class="calc-card fade-up stagger-1" id="roi-calculator">
+        <div class="calc-grid">
+          <div class="calc-field">
+            <label for="calc-amount">Investment Amount (USD)</label>
+            <input
+              type="number"
+              id="calc-amount"
+              class="calc-input"
+              value="10000"
+              min="500"
+              max="10000000"
+              step="100"
+              placeholder="e.g. 10,000"
+            />
+          </div>
+          <div class="calc-field">
+            <label for="calc-plan">Investment Plan</label>
+            <select id="calc-plan" class="calc-input">
+              <option value="starter">Starter — 8.0% p.a.</option>
+              <option value="growth" selected>Growth — 10.5% p.a.</option>
+              <option value="premium">Premium — 13.0% p.a.</option>
+              <option value="institutional">Institutional — 15.5% p.a.</option>
+            </select>
+          </div>
+          <div class="calc-field" style="grid-column: 1 / -1;">
+            <label for="calc-duration">
+              Duration: <span id="duration-display" style="color:var(--color-gold); font-weight:500;">12 months</span>
+            </label>
+            <div class="range-wrap">
+              <input type="range" id="calc-duration" min="3" max="60" value="12" step="1" />
+              <div class="range-labels">
+                <span>3 months</span>
+                <span>1 year</span>
+                <span>2 years</span>
+                <span>3 years</span>
+                <span>5 years</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="calc-results">
+          <div class="calc-result-item">
+            <div class="calc-result-label">Projected Return</div>
+            <div class="calc-result-value" id="result-return">$875.00</div>
+          </div>
+          <div class="calc-result-item" style="border-left:1px solid var(--color-border); border-right:1px solid var(--color-border);">
+            <div class="calc-result-label">Total Value</div>
+            <div class="calc-result-value" id="result-total">$10,875.00</div>
+          </div>
+          <div class="calc-result-item">
+            <div class="calc-result-label">Monthly Income</div>
+            <div class="calc-result-value" id="result-monthly">$87.50</div>
+          </div>
+        </div>
+
+        <p style="font-size:12px; color:var(--color-text-faint); margin-top:20px; text-align:center; line-height:1.6;">
+          Estimates are based on fixed simple interest rates. Actual returns may vary. Past performance is not indicative of future results.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-gold" />
+
+  <!-- ============================================================
+       FAQ ACCORDION
+       ============================================================ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label" style="justify-content:center;">
+          <span class="label-caps">Frequently Asked</span>
+        </div>
+        <h2 class="section-title">Questions &amp; Answers</h2>
+      </div>
+
+      <div class="faq-list fade-up stagger-1">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What is the minimum investment amount?
+            <span class="faq-icon">
+              <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            </span>
+          </button>
+          <div class="faq-answer">
+            The minimum investment depends on your chosen plan. The Starter plan accepts deposits from as little as <strong style="color:var(--color-text);">$500 USD</strong>. The Growth plan starts at $5,000, Premium at $25,000, and our Institutional tier is available from $100,000. You can always upgrade to a higher plan by topping up your investment.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How does the lock-in period work?
+            <span class="faq-icon">
+              <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            </span>
+          </button>
+          <div class="faq-answer">
+            The lock-in period is the minimum duration your capital must remain invested to earn the stated rate. The Starter plan has <strong style="color:var(--color-text);">no lock-in</strong>. Growth requires 90 days, and Premium requires 6 months. Early withdrawal during a lock-in period is permitted but incurs a 2% early exit fee and forfeiture of any unpaid interest for that period. After the lock-in expires, funds can be withdrawn freely with 3–5 business days processing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How and when are returns paid out?
+            <span class="faq-icon">
+              <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Returns are credited to your AUREX wallet on the <strong style="color:var(--color-text);">1st of each calendar month</strong> for monthly payouts. Quarterly bonuses for the Growth plan are credited at the end of each quarter (March 31, June 30, September 30, December 31). You can withdraw credited returns to your linked bank account at any time, or enable auto-reinvestment for compounding growth.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Are there any tax implications on my returns?
+            <span class="faq-icon">
+              <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Tax obligations vary by your country of residence. AUREX provides detailed <strong style="color:var(--color-text);">annual tax statements</strong> for all investors summarizing total interest earned during the year. You are responsible for declaring investment income per your local tax laws. Our Premium and Institutional clients have access to tax advisory sessions with our partner tax professionals to structure investments efficiently.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How safe is my capital with AUREX?
+            <span class="faq-icon">
+              <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            </span>
+          </button>
+          <div class="faq-answer">
+            Client capital is held in <strong style="color:var(--color-text);">segregated custodian accounts</strong> with licensed banking partners — entirely separate from AUREX operational funds. All client deposits carry institutional insurance coverage. Our platform undergoes annual third-party security and compliance audits. However, all investments carry inherent risk. We encourage all investors to read our full Risk Disclosure document before committing capital.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner fade-in">
+    <div class="container" style="position:relative; text-align:center;">
+      <h2 class="cta-banner-title">Start Growing Today</h2>
+      <p class="cta-banner-sub">Open your account in under 3 minutes. No paperwork. No branch visits.</p>
+      <div class="flex-center" style="gap:16px; flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn-gold btn-lg">
+          <i data-lucide="trending-up" style="width:18px;height:18px;"></i>
+          Open Account
+        </a>
+        <a href="contact.html" class="btn btn-ghost btn-lg">Speak to an Advisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="display:inline-flex;">
+            AUREX<span class="nav-logo-dot"></span>
+          </a>
+          <p>Democratizing access to institutional-grade dollar investments for global investors. Secure, transparent, and built for long-term wealth creation.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Platform</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="plans.html" class="footer-link">Investment Plans</a>
+            <a href="dashboard.html" class="footer-link">Investor Dashboard</a>
+            <a href="about.html" class="footer-link">About AUREX</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">Our Story</a>
+            <a href="about.html" class="footer-link">Leadership Team</a>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Press &amp; Media</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Risk Disclosure</a>
+            <a href="#" class="footer-link">AML Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          <strong style="color:var(--color-text-muted);">Important Disclaimer:</strong> Investment returns are not guaranteed. Past performance does not indicate future results. All investments carry risk, including possible loss of principal. Please read all terms, risk disclosures, and plan documents before investing.
+        </p>
+        <p class="footer-copy">© 2024 AUREX Financial. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

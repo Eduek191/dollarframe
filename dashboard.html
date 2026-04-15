@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — AUREX Investor Portal</title>
+  <meta name="description" content="Your AUREX investor dashboard. Monitor portfolio performance, track returns, and manage your investments." />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR (fixed top bar)
+       ============================================================ -->
+  <nav class="navbar scrolled" id="navbar" style="border-bottom:1px solid var(--color-border);">
+    <div class="container-lg navbar-inner">
+      <a href="index.html" class="nav-logo">
+        AUREX<span class="nav-logo-dot"></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div class="dash-bell">
+          <i data-lucide="bell" style="width:16px;height:16px;"></i>
+          <span class="dash-bell-dot"></span>
+        </div>
+        <div class="dash-avatar">AJ</div>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="plans.html" class="nav-link">Plans</a>
+    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="plans.html" class="btn btn-gold">Invest More</a>
+  </div>
+
+  <!-- ============================================================
+       DASHBOARD LAYOUT
+       ============================================================ -->
+  <div class="dashboard-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <p class="sidebar-section-title">Main</p>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link active">
+          <i data-lucide="layout-dashboard" style="width:16px;height:16px;"></i>
+          Overview
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="briefcase" style="width:16px;height:16px;"></i>
+          Portfolio
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="repeat" style="width:16px;height:16px;"></i>
+          Transactions
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="bar-chart-2" style="width:16px;height:16px;"></i>
+          Analytics
+        </a>
+      </nav>
+
+      <p class="sidebar-section-title" style="margin-top:8px;">Account</p>
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-link">
+          <i data-lucide="settings" style="width:16px;height:16px;"></i>
+          Settings
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="shield" style="width:16px;height:16px;"></i>
+          Security
+        </a>
+        <a href="#" class="sidebar-link">
+          <i data-lucide="help-circle" style="width:16px;height:16px;"></i>
+          Support
+        </a>
+      </nav>
+
+      <!-- Upgrade nudge -->
+      <div style="margin:20px 16px 0; padding:20px 16px; background:linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.03)); border:1px solid rgba(201,168,76,0.2); border-radius:10px;">
+        <div style="font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-gold); margin-bottom:8px;">Pro Tip</div>
+        <p style="font-size:12px; color:var(--color-text-muted); line-height:1.6; margin-bottom:12px;">Upgrade to Premium for 13% returns and a dedicated portfolio manager.</p>
+        <a href="plans.html" class="btn btn-gold btn-sm" style="width:100%; justify-content:center; font-size:12px;">Upgrade Plan</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="dash-main">
+
+      <!-- Top bar -->
+      <div class="dash-topbar">
+        <div>
+          <div class="dash-greeting">Welcome back, <span>Alex</span></div>
+          <div class="dash-date">Tuesday, 15 April 2025 · Your portfolio is performing well</div>
+        </div>
+        <div class="dash-topbar-right">
+          <a href="plans.html" class="btn btn-gold btn-sm" style="display:none;" id="invest-btn">
+            <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            Invest More
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           PORTFOLIO SUMMARY CARDS
+           ============================================================ -->
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="summary-card-label">Total Invested</div>
+          <div class="summary-card-value">$12,500.00</div>
+          <div class="summary-card-change" style="color:var(--color-text-muted);">
+            <i data-lucide="minus" style="width:12px;height:12px;"></i>
+            Principal balance
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-card-label">Current Value</div>
+          <div class="summary-card-value">$14,023.45</div>
+          <div class="summary-card-change" style="color:var(--color-success);">
+            <i data-lucide="trending-up" style="width:12px;height:12px;"></i>
+            +12.19% total growth
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-card-label">Total Returns Earned</div>
+          <div class="summary-card-value" style="color:var(--color-gold-light);">$1,523.45</div>
+          <div class="summary-card-change" style="color:var(--color-success);">
+            <i data-lucide="arrow-up" style="width:12px;height:12px;"></i>
+            +$109.58 this month
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-card-label">Monthly Income</div>
+          <div class="summary-card-value">$109.58</div>
+          <div class="summary-card-change" style="color:var(--color-text-muted);">
+            <i data-lucide="calendar" style="width:12px;height:12px;"></i>
+            Next payout: May 1
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           CHARTS ROW
+           ============================================================ -->
+      <div class="dash-charts-grid">
+
+        <!-- Returns Line Chart -->
+        <div class="line-chart-wrap">
+          <div class="flex-between" style="margin-bottom:4px;">
+            <div>
+              <div class="line-chart-title">Portfolio Growth</div>
+              <div class="line-chart-sub">12-month portfolio value</div>
+            </div>
+            <div style="display:flex; gap:8px;">
+              <button class="btn btn-ghost btn-sm" style="padding:6px 12px; font-size:11px; border-color:rgba(201,168,76,0.2);">1M</button>
+              <button class="btn btn-ghost btn-sm" style="padding:6px 12px; font-size:11px; background:rgba(201,168,76,0.1); border-color:var(--color-gold); color:var(--color-gold);">1Y</button>
+              <button class="btn btn-ghost btn-sm" style="padding:6px 12px; font-size:11px; border-color:rgba(201,168,76,0.2);">All</button>
+            </div>
+          </div>
+          <svg id="returns-svg" class="line-chart-svg" viewBox="0 0 500 180" preserveAspectRatio="xMidYMid meet">
+            <!-- Rendered by JS -->
+          </svg>
+          <div style="display:flex; justify-content:space-between; margin-top:12px; font-size:12px; color:var(--color-text-muted);">
+            <span>Started: Jan 2025 · <strong style="color:var(--color-text);">$12,500</strong></span>
+            <span>Current: Apr 2025 · <strong style="color:var(--color-gold);">$14,023.45</strong></span>
+          </div>
+        </div>
+
+        <!-- Donut Chart -->
+        <div class="donut-chart-wrap">
+          <div class="donut-chart-title">Allocation</div>
+          <div class="donut-chart"></div>
+          <div class="donut-legend">
+            <div class="donut-legend-item">
+              <div class="donut-legend-dot" style="background:var(--color-gold);"></div>
+              <div style="flex:1;">
+                <div style="font-size:13px;">Growth Plan</div>
+                <div style="font-size:11px; color:var(--color-text-muted);">$10,000 · 80%</div>
+              </div>
+              <div style="font-size:13px; color:var(--color-gold);">10.5%</div>
+            </div>
+            <div class="donut-legend-item" style="margin-top:4px;">
+              <div class="donut-legend-dot" style="background:var(--color-surface-2); border:1px solid var(--color-border);"></div>
+              <div style="flex:1;">
+                <div style="font-size:13px;">Starter Plan</div>
+                <div style="font-size:11px; color:var(--color-text-muted);">$2,500 · 20%</div>
+              </div>
+              <div style="font-size:13px; color:var(--color-text-muted);">8.0%</div>
+            </div>
+          </div>
+
+          <!-- Quick stats below -->
+          <div style="margin-top:24px; padding-top:20px; border-top:1px solid var(--color-border);">
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:10px;">
+              <span style="color:var(--color-text-muted);">Blended rate</span>
+              <span style="color:var(--color-gold); font-weight:500;">9.6%</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; margin-bottom:10px;">
+              <span style="color:var(--color-text-muted);">Active plans</span>
+              <span>2</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:12px;">
+              <span style="color:var(--color-text-muted);">Risk profile</span>
+              <span style="color:var(--color-success);">Moderate</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============================================================
+           ACTIVE INVESTMENTS TABLE
+           ============================================================ -->
+      <div class="dash-table-wrap" style="margin-bottom:24px;">
+        <div class="dash-table-header">
+          <div class="dash-table-title">Active Investments</div>
+          <a href="plans.html" class="btn btn-outline-gold btn-sm">
+            <i data-lucide="plus" style="width:14px;height:14px;"></i>
+            Add Investment
+          </a>
+        </div>
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Invested</th>
+              <th>Return Rate</th>
+              <th>Current Value</th>
+              <th>Monthly Income</th>
+              <th>Lock-in Expires</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div style="width:32px; height:32px; background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.3); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="trending-up" style="width:14px;height:14px; color:var(--color-gold);"></i>
+                  </div>
+                  <div>
+                    <div style="font-weight:500;">Growth</div>
+                    <div style="font-size:11px; color:var(--color-text-muted);">ID: AX-29481</div>
+                  </div>
+                </div>
+              </td>
+              <td style="font-weight:500;">$10,000.00</td>
+              <td>
+                <span style="color:var(--color-gold); font-weight:500;">10.5%</span>
+                <span style="font-size:11px; color:var(--color-text-muted);"> p.a.</span>
+              </td>
+              <td style="color:var(--color-success); font-weight:500;">$11,254.12</td>
+              <td>$87.50</td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Jul 15, 2025</td>
+              <td><span class="status-badge status-active">
+                <i data-lucide="circle" style="width:6px;height:6px; fill:var(--color-success);"></i>
+                Active
+              </span></td>
+            </tr>
+            <tr>
+              <td>
+                <div style="display:flex; align-items:center; gap:10px;">
+                  <div style="width:32px; height:32px; background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.15); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="bar-chart" style="width:14px;height:14px; color:var(--color-gold);"></i>
+                  </div>
+                  <div>
+                    <div style="font-weight:500;">Starter</div>
+                    <div style="font-size:11px; color:var(--color-text-muted);">ID: AX-18302</div>
+                  </div>
+                </div>
+              </td>
+              <td style="font-weight:500;">$2,500.00</td>
+              <td>
+                <span style="color:var(--color-gold); font-weight:500;">8.0%</span>
+                <span style="font-size:11px; color:var(--color-text-muted);"> p.a.</span>
+              </td>
+              <td style="color:var(--color-success); font-weight:500;">$2,769.33</td>
+              <td>$22.08</td>
+              <td style="color:var(--color-text-muted); font-size:13px;">No lock-in</td>
+              <td><span class="status-badge status-active">
+                <i data-lucide="circle" style="width:6px;height:6px; fill:var(--color-success);"></i>
+                Active
+              </span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ============================================================
+           RECENT TRANSACTIONS
+           ============================================================ -->
+      <div class="dash-table-wrap">
+        <div class="dash-table-header">
+          <div class="dash-table-title">Recent Transactions</div>
+          <button class="btn btn-ghost btn-sm" style="font-size:12px;">View All</button>
+        </div>
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Plan</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color:var(--color-text-muted); font-size:13px;">Apr 1, 2025</td>
+              <td>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="width:28px; height:28px; background:rgba(201,168,76,0.1); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="zap" style="width:12px;height:12px; color:var(--color-gold);"></i>
+                  </div>
+                  Interest Credit — Monthly
+                </div>
+              </td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Growth</td>
+              <td style="color:var(--color-success); font-weight:500;">+$87.50</td>
+              <td><span class="status-badge status-credit">Credited</span></td>
+            </tr>
+            <tr>
+              <td style="color:var(--color-text-muted); font-size:13px;">Apr 1, 2025</td>
+              <td>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="width:28px; height:28px; background:rgba(201,168,76,0.1); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="zap" style="width:12px;height:12px; color:var(--color-gold);"></i>
+                  </div>
+                  Interest Credit — Monthly
+                </div>
+              </td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Starter</td>
+              <td style="color:var(--color-success); font-weight:500;">+$22.08</td>
+              <td><span class="status-badge status-credit">Credited</span></td>
+            </tr>
+            <tr>
+              <td style="color:var(--color-text-muted); font-size:13px;">Mar 15, 2025</td>
+              <td>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="width:28px; height:28px; background:rgba(76,175,125,0.1); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="arrow-down-circle" style="width:12px;height:12px; color:var(--color-success);"></i>
+                  </div>
+                  Deposit — Wire Transfer
+                </div>
+              </td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Growth</td>
+              <td style="color:var(--color-text); font-weight:500;">+$5,000.00</td>
+              <td><span class="status-badge status-active">Completed</span></td>
+            </tr>
+            <tr>
+              <td style="color:var(--color-text-muted); font-size:13px;">Mar 1, 2025</td>
+              <td>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="width:28px; height:28px; background:rgba(201,168,76,0.1); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="zap" style="width:12px;height:12px; color:var(--color-gold);"></i>
+                  </div>
+                  Interest Credit — Monthly
+                </div>
+              </td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Growth</td>
+              <td style="color:var(--color-success); font-weight:500;">+$87.50</td>
+              <td><span class="status-badge status-credit">Credited</span></td>
+            </tr>
+            <tr>
+              <td style="color:var(--color-text-muted); font-size:13px;">Jan 12, 2025</td>
+              <td>
+                <div style="display:flex; align-items:center; gap:8px;">
+                  <div style="width:28px; height:28px; background:rgba(76,175,125,0.1); border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                    <i data-lucide="arrow-down-circle" style="width:12px;height:12px; color:var(--color-success);"></i>
+                  </div>
+                  Initial Deposit — Wire Transfer
+                </div>
+              </td>
+              <td style="color:var(--color-text-muted); font-size:13px;">Starter + Growth</td>
+              <td style="color:var(--color-text); font-weight:500;">+$7,500.00</td>
+              <td><span class="status-badge status-active">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Footer note -->
+      <div style="margin-top:32px; padding:16px 20px; background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); font-size:12px; color:var(--color-text-faint); line-height:1.6;">
+        <strong style="color:var(--color-text-muted);">Dashboard Notice:</strong> This is a UI demonstration. All figures shown are illustrative mock data. Actual portfolio values and returns depend on your specific investments and plan terms. Past performance does not guarantee future results.
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('invest-btn').style.display = 'inline-flex';
+  </script>
+</body>
+</html>
